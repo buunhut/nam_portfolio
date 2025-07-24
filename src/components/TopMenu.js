@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { updateOverlay } from "../redux/dataSlice";
+import { NavLink } from "react-router-dom";
 
 const TopMenu = () => {
   const dispatch = useDispatch();
@@ -29,8 +30,10 @@ const TopMenu = () => {
         Menu
       </div>
       <div className="brandName">
-        <h1>NAM</h1>
-        <p>Architeture - interior</p>
+        <NavLink to={"/"}>
+          <h1>NAM</h1>
+          <p>Architeture - interior</p>
+        </NavLink>
       </div>
       <div className="iconContact">
         <i className="fa-brands fa-facebook-f"></i>
