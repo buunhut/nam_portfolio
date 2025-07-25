@@ -6,12 +6,7 @@ const Blog = () => {
     <div id="blog">
       <TopMenu data={true} />
       <div className="content">
-        <iframe
-          src="/pdf/sample.pdf"
-          width="100%"
-          height="800px"
-          title="PDF Viewer"
-        />
+        <iframe src="/pdf/sample.pdf" title="PDF Viewer" />
       </div>
     </div>
   );

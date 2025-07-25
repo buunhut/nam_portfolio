@@ -632,14 +632,25 @@ footer {
 }
 
 #blog {
-    margin: 100px auto;
+    margin-top: 80px;
 
     .content {
-        width: 1050px;
-        margin: 150px auto;
-        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
 
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
 
+            // Đảm bảo không bị thu nhỏ hay overflow
+            display: block;
+        }
     }
 }
 
