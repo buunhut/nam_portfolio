@@ -27,8 +27,15 @@ const HomeMenu = () => {
         >
           <i className="fa-brands fa-facebook-f"></i>
         </a>
-        <i className="fa-brands fa-instagram"></i>
-        <i className="fa-solid fa-envelope"></i>
+        <a href="https://www.youtube.com/@namihomesaigon" target="_blank">
+          <i className="fa-brands fa-youtube"></i>
+        </a>
+        <a href="mailto:namihome.saigon@gmail.com">
+          <i className="fa-solid fa-envelope"></i>
+        </a>
+        <a href="tel:+84903052135">
+          <i className="fa-solid fa-phone"></i>
+        </a>
       </div>
     </div>
   );

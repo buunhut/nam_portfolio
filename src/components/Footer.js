@@ -12,13 +12,13 @@ const Footer = () => {
     <footer>
       <ul>
         <li onClick={handleToTop}>
-          <NavLink to={"/portfolio"}>Portfolio</NavLink>
+          <NavLink to={"/portfolio"}>Nhà Đất</NavLink>
         </li>
         <li onClick={handleToTop}>
-          <NavLink to={"/blog"}>Blog</NavLink>
+          <NavLink to={"/blog"}>Phân Tích</NavLink>
         </li>
         <li onClick={handleToTop}>
-          <NavLink to={"/contact"}>Contact</NavLink>
+          <NavLink to={"/contact"}>Liên Hệ</NavLink>
         </li>
       </ul>
       <p>Copyright 2025 © NAM IHOME</p>
