@@ -3,25 +3,25 @@ import { useDispatch } from "react-redux";
 import { updateOverlay } from "../redux/dataSlice";
 import { NavLink } from "react-router-dom";
 
-const TopMenu = () => {
+const TopMenu = ({ data }) => {
   const dispatch = useDispatch();
   const handleClickOpenMenu = () => {
     dispatch(updateOverlay(true));
   };
 
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(data);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShowMenu(window.scrollY > 200);
-    };
+    if (!data) {
+      const handleScroll = () => {
+        setShowMenu(window.scrollY > 200);
+      };
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
   }, []);
-
-  console.log(showMenu);
 
   return (
     <div id="topMenu" style={{ height: showMenu ? "80px" : 0 }}>

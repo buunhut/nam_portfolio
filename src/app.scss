@@ -256,13 +256,14 @@ footer {
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(57, 203, 208, 0.9);
     text-align: center;
+    z-index: 10001;
 
     .close {
         position: absolute;
@@ -286,6 +287,27 @@ footer {
             list-style: none;
             padding: 10px 20px;
             transition: all .3s;
+            transition: all .3s;
+            opacity: 0;
+            animation: fadeDown 0.5s ease forwards;
+            // width: 100%;
+
+            // delay theo thứ tự
+            &:nth-child(1) {
+                animation-delay: 0s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 0.1s;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 0.2s;
+            }
+
+            &:nth-child(4) {
+                animation-delay: 0.3s;
+            }
 
             &:hover {
                 background-color: rgba(10, 8, 19, 0.086);
@@ -299,21 +321,23 @@ footer {
                 color: white;
             }
 
-        }
+            &.iconContact {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
 
-        .iconContact {
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
+                i {
+                    cursor: pointer;
+                    color: white;
+                }
 
-            i {
-                cursor: pointer;
-                color: white;
+
             }
 
-
         }
+
+
 
     }
 }
@@ -458,6 +482,103 @@ footer {
     }
 }
 
+#contact {
+    .content {
+        width: 1050px;
+        margin: 140px auto 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        form {
+            width: 500px;
+
+            h3 {
+                margin-bottom: 15px;
+                color: #555555;
+
+            }
+
+            .inputItem {
+                margin-bottom: 15px;
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    padding: 15px;
+                    font-size: 16px;
+                    border-radius: 20px;
+                    background-color: #00000008;
+                    border: 1px solid silver;
+
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 120px;
+                    border-radius: 20px;
+                    resize: none;
+                    padding: 15px;
+                    font-size: 16px;
+                    background-color: #00000008;
+                    border: 1px solid silver;
+
+
+
+
+                }
+            }
+
+            button {
+                font-size: 16px;
+                width: 100px;
+                height: 40px;
+                background-color: #2B2B2B;
+                color: white;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .address {
+            width: 500px;
+
+
+            .addressItem {
+                margin-bottom: 30px;
+                color: #777777;
+
+                h3 {
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                        width: 30px;
+                        height: 3px;
+                        background-color: #0000001A;
+                    }
+                }
+
+                p {
+                    margin-top: 20px;
+                }
+
+                iframe {
+                    width: 100%;
+                    height: 400px;
+                    border: none;
+                }
+            }
+
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     #portfolio {
         .banner {
@@ -470,6 +591,25 @@ footer {
 
             .product {
                 padding: 0 10px;
+            }
+        }
+    }
+
+    #contact {
+        .content {
+            width: 100%;
+            gap: 100px;
+
+            form {
+                width: 100%;
+                padding: 0 10px;
+
+            }
+
+            .address {
+                width: 100%;
+                padding: 0 10px;
+
             }
         }
     }
@@ -499,5 +639,17 @@ footer {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

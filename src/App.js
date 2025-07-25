@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "./pages/Index";
 import BackToTop from "./components/BackToTop";
+import OverlayMenu from "./components/OverlayMenu";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
+      <OverlayMenu />
       <BackToTop />
     </BrowserRouter>
   );
