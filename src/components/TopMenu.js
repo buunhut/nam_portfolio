@@ -32,7 +32,7 @@ const TopMenu = ({ data }) => {
       <div className="brandName">
         <NavLink to={"/"}>
           <h1>NAM</h1>
-          <p>Architeture - interior</p>
+          <p>invest - realty</p>
         </NavLink>
       </div>
       <div className="iconContact">

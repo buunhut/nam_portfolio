@@ -15,7 +15,7 @@ const HomeMenu = () => {
       </div>
       <div className="brandName">
         <h1>NAM</h1>
-        <p>Architeture - interior</p>
+        <p>invest - realty</p>
       </div>
       <div className="iconContact">
         <i className="fa-brands fa-facebook-f"></i>

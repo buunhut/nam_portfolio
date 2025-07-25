@@ -577,6 +577,12 @@ footer {
 
                 p {
                     margin-top: 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: #777777;
+
+                    }
                 }
 
                 iframe {
@@ -623,6 +629,18 @@ footer {
         }
     }
 
+}
+
+#blog {
+    margin: 100px auto;
+
+    .content {
+        width: 1050px;
+        margin: 150px auto;
+        min-height: 100vh;
+
+
+    }
 }
 
 @media screen and (max-width: 768px) {

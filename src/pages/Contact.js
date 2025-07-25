@@ -23,22 +23,27 @@ const Contact = () => {
           <div className="addressItem">
             <h3>ADDRESS</h3>
             <p>
-              710/6 Phan Van Tri Street, Ward 10, Go Vap District, Ho Chi Minh
-              City, Vietnam
+              1 Nguyễn Cơ Thạch, An Lợi Đông Ward, Ho Chi Minh City, Vietnam
             </p>
           </div>
           <div className="addressItem">
             <h3>PHONE</h3>
-            <p>+84 961 426 689</p>
+            <p>
+              <a href="tel:+84903052135">+84 903 052 135</a>
+            </p>
           </div>
           <div className="addressItem">
             <h3>EMAIL</h3>
-            <p>niaconcept.contact@gmail.com</p>
+            <p>
+              <a href="mailto:namihome.saigon@gmail.com">
+                namihome.saigon@gmail.com
+              </a>
+            </p>
           </div>
           <div className="addressItem">
             <h3>LOCATION</h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.462979601659!2d106.67678037605428!3d10.775808489372915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f94067cb1ff%3A0xe9caabe9a1e623c8!2zT3JjaGlkIDEgSMOgIMSQw7QgQ2VudHJvc2E!5e0!3m2!1sen!2s!4v1753411364149!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.586137507486!2d106.72354837605421!3d10.766344889381815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317525f5294176b9%3A0x9bb6aa25263cf0f1!2zMSBOZ3V54buFbiBDxqEgVGjhuqFjaCwgQW4gTOG7o2kgxJDDtG5nLCBUaOG7pyDEkOG7qWMsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1753421207332!5m2!1sen!2s"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
