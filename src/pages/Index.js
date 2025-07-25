@@ -8,7 +8,7 @@ const Index = () => {
       <HomeMenu />
       <div className="welcome">
         <p>welcome to</p>
-        <h1>NAM CONCEPT</h1>
+        <h1>NAM IHOME</h1>
         <button type="button">
           <p>
             <NavLink to={"/portfolio"}>

@@ -31,12 +31,19 @@ const TopMenu = ({ data }) => {
       </div>
       <div className="brandName">
         <NavLink to={"/"}>
-          <h1>NAM</h1>
+          {/* <h1>NAM</h1> */}
+          <img src="./img/iconMenuB.png" alt="" />
           <p>invest - realty</p>
         </NavLink>
       </div>
       <div className="iconContact">
-        <i className="fa-brands fa-facebook-f"></i>
+        <a
+          href="https://www.facebook.com/NamiHome.Official/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-facebook-f"></i>
+        </a>
         <i className="fa-brands fa-instagram"></i>
         <i className="fa-solid fa-envelope"></i>
       </div>

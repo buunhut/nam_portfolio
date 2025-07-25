@@ -114,8 +114,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    background-color: rgba(181, 181, 181, 0.3);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: rgba(241, 241, 241, 0.9);
+    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -132,7 +132,7 @@
         cursor: pointer;
         font-size: 18px;
         font-weight: bold;
-        color: #2B2B2B;
+        color: #777777;
 
     }
 
@@ -141,12 +141,17 @@
 
         a {
             text-decoration: none;
-            color: #2B2B2B;
+            color: #777777;
 
 
             h1 {
                 text-align: center;
                 font-weight: bold;
+            }
+
+            img {
+                width: 80px;
+                height: 40px;
             }
 
             p {
@@ -161,13 +166,18 @@
         display: flex;
         gap: 16px;
 
-        i {
-            cursor: pointer;
-            font-size: 18px;
-            color: #2B2B2B;
+        a {
+            color: #777777;
+
+
+            i {
+                cursor: pointer;
+                font-size: 18px;
+                color: #777777;
 
 
 
+            }
         }
     }
 }
@@ -201,6 +211,12 @@
             font-weight: bold;
         }
 
+        img {
+            width: 80px;
+            height: 40px;
+        }
+
+
         p {
             text-align: center;
             font-size: 10px;
@@ -212,11 +228,16 @@
         display: flex;
         gap: 16px;
 
-        i {
-            cursor: pointer;
-            font-size: 18px;
+        a {
+            color: white;
 
 
+            i {
+                cursor: pointer;
+                font-size: 18px;
+
+
+            }
         }
     }
 }
