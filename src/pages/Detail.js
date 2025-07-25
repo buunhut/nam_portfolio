@@ -53,36 +53,40 @@ const Detail = () => {
   };
 
   return (
-    <div id="detail">
+    <>
       <TopMenu data={true} />
-      <div className="content">
-        <h1>{detail.proName}</h1>
-        <ul>
-          <li>Địa chỉ: {detail.address}</li>
-          <li>Diện tích: {detail.dienTich}</li>
-          <li>Kết cấu: {detail.ketCau}</li>
-          <li>Giá bán: {detail.giaBan}</li>
-          <li>
-            Đơn giá:{" "}
-            {detail && tinhDonGiaTheoM2(detail)
-              ? formatDonGiaToShortText(tinhDonGiaTheoM2(detail).donGia) + "/m2"
-              : "Không xác định"}
-          </li>
 
-          <li>Hợp đồng thuê: {detail.hopDong}</li>
-          <li>Hướng: {detail.huong}</li>
-          <li>Pháp lý: {detail.phapLy}</li>
+      <div id="detail">
+        <div className="content">
+          <h1>{detail.proName}</h1>
+          <ul>
+            <li>Địa chỉ: {detail.address}</li>
+            <li>Diện tích: {detail.dienTich}</li>
+            <li>Kết cấu: {detail.ketCau}</li>
+            <li>Giá bán: {detail.giaBan}</li>
+            <li>
+              Đơn giá:{" "}
+              {detail && tinhDonGiaTheoM2(detail)
+                ? formatDonGiaToShortText(tinhDonGiaTheoM2(detail).donGia) +
+                  "/m2"
+                : "Không xác định"}
+            </li>
 
-          <li>Vị trí: {detail.viTri}</li>
-        </ul>
+            <li>Hợp đồng thuê: {detail.hopDong}</li>
+            <li>Hướng: {detail.huong}</li>
+            <li>Pháp lý: {detail.phapLy}</li>
 
-        <div className="photo">
-          {detail?.allPhoto?.map((item, index) => {
-            return <img src={`/img/${item}`} alt="" key={index} />;
-          })}
+            <li>Vị trí: {detail.viTri}</li>
+          </ul>
+
+          <div className="photo">
+            {detail?.allPhoto?.map((item, index) => {
+              return <img src={`/img/${item}`} alt="" key={index} />;
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

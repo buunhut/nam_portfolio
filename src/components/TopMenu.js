@@ -32,7 +32,7 @@ const TopMenu = ({ data }) => {
       <div className="brandName">
         <NavLink to={"/"}>
           {/* <h1>NAM</h1> */}
-          <img src="./img/iconMenuB.png" alt="" />
+          <img src=".././img/iconMenuB.png" alt="" />
           <p>invest - realty</p>
         </NavLink>
       </div>
