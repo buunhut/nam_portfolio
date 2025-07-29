@@ -16,14 +16,15 @@ const initialState = {
       name: "Nhừng tòa nhà tiềm năng 100 - 300 tỷ",
       file: "sample2.pdf",
     },
-     {
-      name: "Khác sạn ",
-      file: "sample3.pdf",
-    },
   ],
+<<<<<<< HEAD
 products: [
   
 ]
+=======
+
+  products: [],
+>>>>>>> eac1d2dcd75b4e50015abb3f45ad0bbc797c1295
 };
 
 const dataSlice = createSlice({
