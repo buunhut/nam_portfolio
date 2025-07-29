@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Index = () => {
   return (
     <div id="index">
-      <TopMenu data={true} />
+      <TopMenu data={false} />
 
       <video autoPlay muted className="video">
         <source src={`/img/bannerV.mp4`} type="video/mp4" />

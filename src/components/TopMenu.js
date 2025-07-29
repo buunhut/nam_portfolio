@@ -14,7 +14,7 @@ const TopMenu = ({ data }) => {
   useEffect(() => {
     if (!data) {
       const handleScroll = () => {
-        setShowMenu(window.scrollY > 200);
+        setShowMenu(window.scrollY > 60);
       };
 
       window.addEventListener("scroll", handleScroll);
