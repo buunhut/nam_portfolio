@@ -105,7 +105,16 @@ const Detail = () => {
 
           <div className="photo">
             {detail?.allPhoto?.map((item, index) => {
-              return <img src={`/img/${item}`} alt="" key={index} />;
+              if (item.endsWith(".mp4")) {
+                return (
+                  <video key={index} controls width="100%">
+                    <source src={`/img/${item}`} type="video/mp4" />
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                  </video>
+                );
+              } else {
+                return <img src={`/img/${item}`} alt="" key={index} />;
+              }
             })}
           </div>
         </div>

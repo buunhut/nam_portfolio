@@ -50,7 +50,7 @@ const initialState = {
       huong: "Đông Nam",
       phapLy: "Cá nhân",
       viTri: "Hồ Học Lãm với Võ Văn Kiệt",
-      allPhoto: ["Q3_001_1.jpg", "Q3_001_2.jpg", "Q3_001_3.jpg"],
+      allPhoto: ["Q3_001_1.jpg", "Q3_001_2.jpg", "Q3_001_3.jpg", "demo.mp4"],
       categories: ["Building"],
     },
     {
