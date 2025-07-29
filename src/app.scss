@@ -736,6 +736,26 @@ footer {
     }
 }
 
+#tool {
+    width: 800px;
+    margin: 10px auto;
+
+
+    form {
+
+        textarea {
+            width: 800px;
+            height: 400px;
+            resize: none;
+            padding: 10px
+        }
+    }
+
+    .content {
+        margin: 10px auto
+    }
+}
+
 @media screen and (max-width: 768px) {
     #portfolio {
         .banner {
