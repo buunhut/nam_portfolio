@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import TopMenu from "../components/TopMenu";
 import { Outlet, useNavigate } from "react-router-dom";
+import { updateSelectedCategory } from "../redux/dataSlice";
 
 const Portfolio = () => {
   const navigate = useNavigate();
-  const { products } = useSelector((state) => state.dataSlice);
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const dispatch = useDispatch();
+  const { products, selectedCategory } = useSelector(
+    (state) => state.dataSlice
+  );
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   // Lấy danh sách category không trùng
@@ -49,7 +52,7 @@ const Portfolio = () => {
                   selectedCategory === "All" ? "3px solid black" : "",
                 color: selectedCategory === "All" ? "black" : "",
               }}
-              onClick={() => setSelectedCategory("All")}
+              onClick={() => dispatch(updateSelectedCategory("All"))}
             >
               All
             </li>
@@ -61,7 +64,7 @@ const Portfolio = () => {
                     selectedCategory === cat ? "3px solid black" : "",
                   color: selectedCategory === cat ? "black" : "",
                 }}
-                onClick={() => setSelectedCategory(cat)}
+                onClick={() => dispatch(updateSelectedCategory(cat))}
               >
                 {cat}
               </li>

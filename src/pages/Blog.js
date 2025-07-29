@@ -1,13 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TopMenu from "../components/TopMenu";
+import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 
 const Blog = () => {
+  const { baiPhanTich } = useSelector((state) => state.dataSlice);
+  const [openPhanTich, setOpenPhanTich] = useState("");
+  useEffect(() => {
+    if (baiPhanTich.length > 0) {
+      setOpenPhanTich(baiPhanTich[0].file);
+    }
+  }, [baiPhanTich]);
   return (
     <div id="blog">
-      <TopMenu data={true} />
-      <div className="content">
-        <iframe src="/pdf/sample.pdf" title="PDF Viewer" />
-      </div>
+      <TopMenu />
+      <h1>Tổng hợp các bài phân tích thị trường</h1>
+      <ul>
+        {baiPhanTich?.map((item, index) => {
+          return (
+            <li
+              key={index}
+              onClick={() => {
+                setOpenPhanTich(item.file);
+              }}
+              style={{ color: item.file === openPhanTich ? "green" : "" }}
+            >
+              {item.name}
+            </li>
+          );
+        })}
+      </ul>
+      {openPhanTich && (
+        <div className="content">
+          <iframe src={`/pdf/${openPhanTich}`} title="PDF Viewer" />
+        </div>
+      )}
     </div>
   );
 };

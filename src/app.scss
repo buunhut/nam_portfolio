@@ -8,19 +8,25 @@
 
 
 #index {
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    background-image: url("../public/img/banner.jpg");
+    // background-color: black;
+    // background-image: url("../public/img/banner.jpg");
     background-size: cover; // đảm bảo ảnh phủ đầy
     background-position: center; // canh giữa ảnh
     background-repeat: no-repeat; // không lặp lại
+
+    .video {
+        height: calc(100vh - 0px);
+        width: 100%;
+        // margin-top: 80px;
+        object-fit: cover;
+    }
 
     .welcome {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -188,10 +194,14 @@
     align-items: center;
     padding: 0 20px;
     height: 80px;
-    // background-color: rgba(255, 255, 255, 0.3);
-    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
-    color: white;
+    // color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 
     .bar {
         display: flex;
@@ -370,7 +380,7 @@ footer {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #000;
+    background-color: #656565;
     color: #fff;
     font-size: 24px;
     width: 40px;
@@ -617,6 +627,34 @@ footer {
     }
 }
 
+.navMenu {
+    height: 50px;
+    background-color: rgba(241, 241, 241, 0.9);
+    margin-top: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        gap: 5px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: #656565;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+        }
+    }
+
+}
+
 #detail {
     margin: 100px auto;
 
@@ -653,7 +691,30 @@ footer {
 }
 
 #blog {
-    margin-top: 80px;
+    // margin-top: 80px;
+
+    h1 {
+        margin: 10px auto;
+        text-align: center;
+        color: #656565;
+
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px;
+
+        li {
+            list-style: none;
+            color: #656565;
+            cursor: pointer;
+
+
+        }
+    }
 
     .content {
         display: flex;
