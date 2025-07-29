@@ -64,7 +64,7 @@ products: [
   phapLy: "cá nhân",
   viTri: "quận 8, quận bình",
   allPhoto: ["ehome1.jpg","ehome2.jpg","ehome3.jpg","ehome4.jpg"],
-  categories: []
+  categories: ["Building"]
   }
 ]
 
