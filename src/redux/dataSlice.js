@@ -5,6 +5,8 @@ const initialState = {
   currency: "Vnđ",
   overlay: false,
 
+  selectedCategory: "All",
+
   products: [
     {
       ma: "Q3_001",
@@ -19,7 +21,37 @@ const initialState = {
       phapLy: "CTCP bán 100%",
       viTri: "Giữa Ngô Thời Nhiệm và Nguyễn Đình Chiểu",
       allPhoto: ["Q3_001_1.jpg", "Q3_001_2.jpg", "Q3_001_3.jpg"],
-      categories: ["Nhà phố"],
+      categories: ["Nhà phố", "Building", "Biệt thự"],
+    },
+    {
+      ma: "Q1_002",
+      proName: "Nhà mặt tiền Quận 1",
+      title: "Hàm Nghi",
+      address: "87A Hàm Nghi, Phường 6, Quận 1, Thành Phố Hồ Chí Minh",
+      dienTich: "4.5 x 43m NH 20m, công nhận 553m2, DTS gần 2.000m2",
+      ketCau: "Hầm, 17 tầng ST",
+      giaBan: "1350 tỷ",
+      hopDong: "800 triệu",
+      huong: "Đông Nam",
+      phapLy: "CTCP bán 100%",
+      viTri: "Giữa Hàm Nghi và Lê Lợi",
+      allPhoto: ["Q3_001_1.jpg", "Q3_001_2.jpg", "Q3_001_3.jpg"],
+      categories: ["Building"],
+    },
+    {
+      ma: "QBT_0021",
+      proName: "Căn hộ Ehome - 3",
+      title: "Hồ Học Lãm",
+      address: "103 Hồ Học Lãm, Phường An Lạc, Thành Phố Hồ Chí Minh",
+      dienTich: "7 x 8, công nhận 64m2",
+      ketCau: "Hầm, 17 tầng ST",
+      giaBan: "2,2 tỷ",
+      hopDong: "8 triệu",
+      huong: "Đông Nam",
+      phapLy: "Cá nhân",
+      viTri: "Hồ Học Lãm với Võ Văn Kiệt",
+      allPhoto: ["Q3_001_1.jpg", "Q3_001_2.jpg", "Q3_001_3.jpg"],
+      categories: ["Building"],
     },
     {
       ma: "BT_BT001",
@@ -34,7 +66,7 @@ const initialState = {
       phapLy: "Cá nhân nắm sổ cứng ngắt",
       viTri: "Đường 19E và Đường 24",
       allPhoto: ["Q3_001_1.jpg", "Q3_001_2.jpg", "Q3_001_3.jpg"],
-      categories: ["Biệt thự"],
+      categories: ["Biệt thự", "Building", "Nhà phố"],
     },
     {
       ma: "Q1_BQ001",
@@ -64,8 +96,12 @@ const dataSlice = createSlice({
     updateOverlay(state, action) {
       state.overlay = action.payload;
     },
+    updateSelectedCategory(state, action) {
+      state.selectedCategory = action.payload;
+    },
   },
 });
 
-export const { updateLogin, updateOverlay } = dataSlice.actions;
+export const { updateLogin, updateOverlay, updateSelectedCategory } =
+  dataSlice.actions;
 export default dataSlice.reducer;

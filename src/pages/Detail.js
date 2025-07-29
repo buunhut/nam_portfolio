@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import TopMenu from "../components/TopMenu";
 import { useSelector } from "react-redux";
 
 const Detail = () => {
   const { ten } = useParams();
-  const { products } = useSelector((state) => state.dataSlice);
+  const { products, selectedCategory } = useSelector(
+    (state) => state.dataSlice
+  );
   const [detail, setDetail] = useState("");
   useEffect(() => {
     const find = products.find((item) => item.ma === ten);
@@ -14,9 +16,17 @@ const Detail = () => {
 
   const tinhDonGiaTheoM2 = (data) => {
     try {
-      // 1. Chuyển "350 tỷ" thành số
-      const giaBanStr = data.giaBan.replace(/[^0-9]/g, ""); // "350"
-      const giaBan = parseInt(giaBanStr, 10) * 1_000_000_000; // 350 * 1 tỷ
+      // 1. Chuyển "2,2 tỷ" thành số
+      const giaBanStr = data.giaBan
+        .toLowerCase()
+        .replace(",", ".") // chuyển 2,2 => 2.2
+        .replace(/[^0-9.]/g, ""); // giữ lại số và dấu chấm
+
+      const giaBan = parseFloat(giaBanStr) * 1_000_000_000; // nhân với 1 tỷ
+
+      if (isNaN(giaBan) || giaBan === 0) {
+        throw new Error("Không xác định được giá bán hợp lệ.");
+      }
 
       // 2. Tìm số công nhận m2 từ chuỗi dienTich (VD: "công nhận 533m2")
       const dienTichMatch = data.dienTich.match(/công nhận\s+([\d.]+)/i);
@@ -30,7 +40,7 @@ const Detail = () => {
       const donGia = giaBan / dienTich;
 
       return {
-        donGia, // đơn giá thô
+        donGia, // đơn giá tính theo đồng/m2
       };
     } catch (error) {
       console.error("Lỗi khi tính đơn giá:", error.message);
@@ -55,6 +65,20 @@ const Detail = () => {
   return (
     <>
       <TopMenu data={true} />
+
+      <div className="navMenu">
+        <ul>
+          <li>
+            <NavLink to={"/"}>Home \</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/portfolio"}>Nhà Đất \</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/portfolio"}>{selectedCategory}</NavLink>
+          </li>
+        </ul>
+      </div>
 
       <div id="detail">
         <div className="content">
