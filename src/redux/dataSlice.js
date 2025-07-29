@@ -17,14 +17,10 @@ const initialState = {
       file: "sample2.pdf",
     },
   ],
-<<<<<<< HEAD
-products: [
-  
-]
-=======
-// bắt đầu sản phâm
+  // bắt đầu product
 
- products: [
+
+products: [
   {
   ma: "q301",
   proName: "nhà phố quận 3",
@@ -55,37 +51,9 @@ products: [
   allPhoto: ["btpkb_1.jpg","btpkb_2.jpg","btpkb_3.jpg"],
   categories: ["Biệt thự"]
   },
-  ma: "btpkb",
-  proName: "biệt thự phan kế bính",
-  title: "quận 1 , sài gòn",
-  address: "20 phan kế bính, phường sài gòn, tp hcm",
-  dienTich: "ngang 9m x dài 25m,, công nhận 224m2",
-  ketCau: "2 tầng",
-  giaBan: "140 tỷ",
-  hopDong: "145 triệu",
-  huong: "tây bắc",
-  phapLy: "cá nhân",
-  viTri: "phan kế bính",
-  allPhoto: ["btpkb_1.jpg","btpkb_2.jpg","btpkb_3.jpg"],
-  categories: ["Biệt thự"]
-  },
-  ma: "btpkb",
-  proName: "biệt thự phan kế bính",
-  title: "quận 1 , sài gòn",
-  address: "20 phan kế bính, phường sài gòn, tp hcm",
-  dienTich: "ngang 9m x dài 25m,, công nhận 224m2",
-  ketCau: "2 tầng",
-  giaBan: "140 tỷ",
-  hopDong: "145 triệu",
-  huong: "tây bắc",
-  phapLy: "cá nhân",
-  viTri: "phan kế bính",
-  allPhoto: ["btpkb_1.jpg","btpkb_2.jpg","btpkb_3.jpg"],
-  categories: ["Biệt thự"]
-  },
   {
   ma: "cheh1",
-  proName: "căn hộ ehome 3",
+  proName: "căn hộ ehome 3333333",
   title: "hồ học lãm",
   address: "103 hồ học lãm",
   dienTich: "ngang 8m x dài 7m, công nhận 63m2",
@@ -100,9 +68,9 @@ products: [
   }
 ]
 
-  // kết thúc san phâm
->>>>>>> eac1d2dcd75b4e50015abb3f45ad0bbc797c1295
-};
+
+  // kết thúc product
+}
 
 const dataSlice = createSlice({
   name: "data",
