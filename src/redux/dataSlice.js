@@ -21,8 +21,7 @@ const initialState = {
       file: "sample3.pdf",
     },
   ],
-
-  products: [
+products: [
   {
   ma: "q301",
   proName: "nhà phố quận 3",
@@ -36,8 +35,7 @@ const initialState = {
   phapLy: "cá nhân",
   viTri: "Giữa đường trần quốc thảo và lý chính thắng",
   allPhoto: ["Q3_001_1.jpg","Q3_001_2.jpg","Q3_001_3.jpg"],
-  categories: ["Nhà phố","Building","Biệt thự"],
-  map: ''
+  categories: ["Nhà phố","Building","Biệt thự"]
   },
   {
   ma: "btpkb",
@@ -51,9 +49,8 @@ const initialState = {
   huong: "tây bắc",
   phapLy: "cá nhân",
   viTri: "phan kế bính",
-  allPhoto: ["pkb_1.jpg","pkb_2.jpg","pkb_3.jpg","videopkb.mp4"],
-  categories: ["Biệt thự"],
-  map: ''
+  allPhoto: ["btpkb_1.jpg","btpkb_2.jpg","btpkb_3.jpg"],
+  categories: ["Biệt thự"]
   },
   {
   ma: "cheh1",
@@ -68,12 +65,9 @@ const initialState = {
   phapLy: "cá nhân",
   viTri: "quận 8, quận bình",
   allPhoto: ["ehome1.jpg","ehome2.jpg","ehome3.jpg","ehome4.jpg"],
-  categories: [],
-  map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.269617709981!2d106.6988459!3d10.7906501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528ca96141627%3A0x41c7fdc05beaac35!2zMjAgUGhhbiBL4bq_IELDrW5oLCDEkGEgS2FvLCBRdeG6rW4gMSwgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1753775690244!5m2!1svi!2s"
+  categories: []
   }
 ]
-
-
 };
 
 const dataSlice = createSlice({

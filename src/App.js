@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "./pages/Index";
 import BackToTop from "./components/BackToTop";
 import OverlayMenu from "./components/OverlayMenu";
+import Tool from "./components/Tool";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/portfolio/:ten" element={<Detail />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/tool" element={<Tool />} />
         </Route>
       </Routes>
       <OverlayMenu />
