@@ -53,17 +53,17 @@ products: [
   },
   {
   ma: "cheh1",
-  proName: "căn hộ ehome 3333333",
-  title: "hồ học lãm",
-  address: "103 hồ học lãm",
-  dienTich: "ngang 8m x dài 7m, công nhận 63m2",
-  ketCau: "2 phòng ngủ, 2 totlet",
-  giaBan: "2ty2",
-  hopDong: "7 triệu",
-  huong: "đông nam",
+  proName: "Toà nhà văn phòng",
+  title: "Lê Quang Định",
+  address: "473 Lê Quang Định, Phường Hạnh Thông (P.1, Gò Vấp cũ), TP.HCM",
+  dienTich: "ngang 8m x dài 22m, công nhận 183m2",
+  ketCau: "1 hầm + 7 tầng",
+  giaBan: "72 tỷ",
+  hopDong: "70 triệu",
+  huong: "Đông Bắc",
   phapLy: "cá nhân",
-  viTri: "quận 8, quận bình",
-  allPhoto: ["ehome1.jpg","ehome2.jpg","ehome3.jpg","ehome4.jpg"],
+  viTri: "Lê Quang Định Gò Vấp củ ",
+  allPhoto: ["lqd1.jpg","lqd2.jpg","lqd3.jpg","lqd4.jpg"],
   categories: ["Building"]
   }
 ]
