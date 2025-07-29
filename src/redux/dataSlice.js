@@ -19,7 +19,6 @@ const initialState = {
   ],
 
   products: [],
-  
 };
 
 const dataSlice = createSlice({
