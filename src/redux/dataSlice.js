@@ -7,6 +7,17 @@ const initialState = {
 
   selectedCategory: "All",
 
+  baiPhanTich: [
+    {
+      name: "Tòa 45 - 47 Phan Đăng Lưu",
+      file: "sample.pdf",
+    },
+    {
+      name: "Nhừng tòa nhà tiềm năng 100 - 300 tỷ",
+      file: "sample2.pdf",
+    },
+  ],
+
   products: [
     {
       ma: "Q3_001",

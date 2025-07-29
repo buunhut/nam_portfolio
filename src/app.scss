@@ -691,7 +691,30 @@ footer {
 }
 
 #blog {
-    margin-top: 80px;
+    // margin-top: 80px;
+
+    h1 {
+        margin: 10px auto;
+        text-align: center;
+        color: #656565;
+
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px;
+
+        li {
+            list-style: none;
+            color: #656565;
+            cursor: pointer;
+
+
+        }
+    }
 
     .content {
         display: flex;
