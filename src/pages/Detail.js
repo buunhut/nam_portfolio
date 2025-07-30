@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import TopMenu from "../components/TopMenu";
 import { useSelector } from "react-redux";
+import { Image } from "antd";
 
 const Detail = () => {
   const { ten } = useParams();
@@ -113,7 +114,8 @@ const Detail = () => {
                   </video>
                 );
               } else {
-                return <img src={`/img/${item}`} alt="" key={index} />;
+                return <Image width={510} src={`/img/${item}`} />;
+                // <img src={`/img/${item}`} alt="" key={index} />;
               }
             })}
           </div>
