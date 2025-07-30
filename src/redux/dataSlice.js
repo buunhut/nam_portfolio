@@ -41,6 +41,21 @@ products: [
   categories: ["Nhà phố","Building","Biệt thự"]
   },
   {
+  ma: "q101",
+  proName: "Khách sạn Quận 1",
+  title: "18 Bùi Thị Xuân",
+  address: "18 Bùi Thị Xuân, Phường Phường Bến Thành (Quận 1 cũ), TP HCM ",
+  dienTich: "ngang 5.3m x dài 23m, công nhận 113m², DTS gần 112.8m²",
+  ketCau: "Hầm, 12 tầng",
+  giaBan: "115 tỷ",
+  hopDong: "400 triệu",
+  huong: "Đông Nam",
+  phapLy: "cá nhân",
+  viTri: "Giữa  đường Bùi THị Xuân với Cách Mạng Tháng Tám",
+  allPhoto: ["btx1.jpg","btx2.jpg","btx3.jpg","btx4.jpg"],
+  categories: ["Nhà phố","Building",]
+  },
+  {
   ma: "btpkb",
   proName: "biệt thự phan kế bính",
   title: "quận 1 , sài gòn",
@@ -70,6 +85,7 @@ products: [
   allPhoto: ["lqd1.jpg","lqd2.jpg","lqd3.jpg","lqd4.jpg"],
   categories: ["Building"]
   }
+  
 ]
 
 
