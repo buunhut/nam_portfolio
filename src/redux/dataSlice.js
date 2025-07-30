@@ -27,18 +27,18 @@ const initialState = {
 products: [
   {
   ma: "q301",
-  proName: "nhà phố quận 3",
-  title: "trần quốc thảo",
-  address: "100 trân quốc thảo",
-  dienTich: "ngang 4.5m x dài 43m NH 20m, công nhận 553m², DTS gần 2.000m²",
-  ketCau: "Hầm, 7 tầng",
-  giaBan: "700 tỷ",
+  proName: "TOÀ NHÀ VĂN PHÒNG",
+  title: "28 Trần Quốc Thảo",
+  address: "28 Trần Quốc Thảo, Phường Xuân Hoà (P.VTS Q3 cũ), TP HCM",
+  dienTich: "ngang 4.5m x dài 43m NH 20m, công nhận 553.3m², DTS 1.922m²",
+  ketCau: "Hầm, 7 tầng, Sân thượng",
+  giaBan: "350 tỷ",
   hopDong: "800 triệu",
-  huong: "đông nam",
-  phapLy: "cá nhân",
+  huong: "Tây Nam",
+  phapLy: "CTCP bán 100% cổ phần",
   viTri: "Giữa đường trần quốc thảo và lý chính thắng",
-  allPhoto: ["Q3_001_1.jpg","Q3_001_2.jpg","Q3_001_3.jpg"],
-  categories: ["Nhà phố","Building","Biệt thự"]
+  allPhoto: ["28tqt1.jpg","28tqt2.jpg","28tqt3.jpg","28tqt4.jpg"],
+  categories: ["Nhà phố","Building",]
   },
   {
   ma: "q101",
