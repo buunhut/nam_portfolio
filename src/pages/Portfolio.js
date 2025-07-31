@@ -22,7 +22,7 @@ const Portfolio = () => {
       // Lọc trùng theo proName (bỏ trùng tên)
       const uniqueMap = new Map();
       products.forEach((sp) => {
-        const key = sp.proName.trim().toLowerCase();
+        const key = sp.ma.trim().toLowerCase();
         if (!uniqueMap.has(key)) {
           uniqueMap.set(key, sp);
         }

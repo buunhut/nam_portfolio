@@ -28,7 +28,7 @@ const initialState = {
 
   products: [
   {
-  ma: "q301",
+  ma: "1",
   proName: "TOÀ NHÀ VĂN PHÒNG ",
   title: "28 Trần Quốc Thảo",
   address: "28 Trần Quốc Thảo, Phường Xuân Hoà (P.VTS Q3 cũ), TP HCM",
@@ -43,7 +43,7 @@ const initialState = {
   categories: ["Nhà phố","Building"]
   },
    {
-  ma: "q302",
+  ma: "2",
   proName: "TOÀ NHÀ VĂN PHÒNG ",
   title: "112 Trần Quốc Thảo",
   address: "112 Trần Quốc Thảo, Phường Xuân Hoà (P.VTS Q3 cũ), TP HCM",
@@ -58,7 +58,7 @@ const initialState = {
   categories: ["Nhà phố","Building",]
   },
   {
-  ma: "btpkb",
+  ma: "3",
   proName: "Biệt Thự Phan Kế Bính",
   title: "20 Phan Kế Bính",
   address: "20 Phan Kế Bính, Phường Sài Gòn (Đakao Q1 cũ), TP HCM",
@@ -73,7 +73,7 @@ const initialState = {
   categories: ["Biệt thự"]
   },
    {
-  ma: "TOÀ NHÀ VĂN PHÒNG",
+  ma: "4",
   proName: "Toà Nhà Văn Phòng",
   title: "473 Lê Quang Định",
   address: "473 Lê Quang Định, Phường Hạnh Thông,(P1 Gò Vấp cũ), TP HCM",
@@ -88,7 +88,7 @@ const initialState = {
   categories: ["Building"]
   },
    {
-  ma: "q1003",
+  ma: "5",
   proName: "NHÀ MẶT TIỀN NGUYỄN KHẮC NHU",
   title: "25-27 Nguyễn Khắc Như",
   address: "25-27 Nguyễn Khắc Như, Phường Cầu Ông Lãnh (Cô Giang Q1cũ), TP HCM",
@@ -103,7 +103,7 @@ const initialState = {
   categories: ["Building", "Nhà phố"]
   },
   {
-  ma: "q101",
+  ma: "6",
   proName: "Khách sạn Quận 1",
   title: "18 Bùi Thị Xuân",
   address: "18 Bùi Thị Xuân, Phường Phường Bến Thành (Quận 1 cũ), TP HCM",
@@ -142,3 +142,4 @@ const dataSlice = createSlice({
 export const { updateLogin, updateOverlay, updateSelectedCategory } =
   dataSlice.actions;
 export default dataSlice.reducer;
+
