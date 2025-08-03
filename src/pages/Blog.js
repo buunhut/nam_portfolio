@@ -1,45 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import TopMenu from "../components/TopMenu";
-// import { useSelector } from "react-redux";
-
-// const Blog = () => {
-//   const { baiPhanTich } = useSelector((state) => state.dataSlice);
-//   const [openPhanTich, setOpenPhanTich] = useState("");
-//   useEffect(() => {
-//     if (baiPhanTich.length > 0) {
-//       setOpenPhanTich(baiPhanTich[0].file);
-//     }
-//   }, [baiPhanTich]);
-//   return (
-//     <div id="blog">
-//       <TopMenu />
-//       <h1>Tổng hợp các bài phân tích thị trường</h1>
-//       <ul>
-//         {baiPhanTich?.map((item, index) => {
-//           return (
-//             <li
-//               key={index}
-//               onClick={() => {
-//                 setOpenPhanTich(item.file);
-//               }}
-//               style={{ color: item.file === openPhanTich ? "green" : "" }}
-//             >
-//               {item.name}
-//             </li>
-//           );
-//         })}
-//       </ul>
-//       {openPhanTich && (
-//         <div className="content">
-//           <iframe src={`/pdf/${openPhanTich}`} title="PDF Viewer" />
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default Blog;
-
 import React, { useEffect, useState } from "react";
 import TopMenu from "../components/TopMenu";
 import { useSelector } from "react-redux";
@@ -77,18 +35,7 @@ const Blog = () => {
           );
         })}
       </ul>
-      {openPhanTich && (
-        // <div className="content">
-        //   <iframe
-        //     src={`/pdf/${openPhanTich}`}
-        //     width="100%"
-        //     height="100%"
-        //     title="PDF Viewer"
-        //     className="responsive-iframe"
-        //   />
-        // </div>
-        <ResponsivePDF fileUrl={`/pdf/${openPhanTich}`} />
-      )}
+      {openPhanTich && <ResponsivePDF fileUrl={`/pdf/${openPhanTich}`} />}
     </div>
   );
 };
