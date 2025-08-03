@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import TopMenu from "../components/TopMenu";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { updateSelectedCategory } from "../redux/dataSlice";
 
 const Portfolio = () => {

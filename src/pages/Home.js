@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Footer from "../components/Footer";
-import { NavLink, Outlet } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { updateOverlay } from "../redux/dataSlice";
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
