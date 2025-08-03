@@ -141,22 +141,6 @@ const initialState = {
       categories: ["Nhà phố", "Building"],
       map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.269617709981!2d106.6988459!3d10.7906501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528ca96141627%3A0x41c7fdc05beaac35!2zMjAgUGhhbiBL4bq_IELDrW5oLCDEkGEgS2FvLCBRdeG6rW4gMSwgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1753775690244!5m2!1svi!2s",
     },
-    {
-      ma: "8",
-      proName: "Khách sạn Quận 10",
-      title: "18 Bùi Thị Xuân",
-      address: "18 Bùi Thị Xuân, Phường Phường Bến Thành (Quận 1 cũ), TP HCM",
-      dienTich: "ngang 5.3m x dài 23m, công nhận 113m², DTS gần 112.8m²",
-      ketCau: "Hầm, 12 tầng",
-      giaBan: "115",
-      hopDong: "400 triệu",
-      huong: "Đông Nam",
-      phapLy: "cá nhân",
-      viTri: "Giữa đường Bùi Thị Xuân với Cách Mạng Tháng Tám",
-      allPhoto: ["btx1.jpg", "btx2.jpg", "btx3.jpg", "btx4.jpg"],
-      categories: ["Nhà phố", "Building"],
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.269617709981!2d106.6988459!3d10.7906501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528ca96141627%3A0x41c7fdc05beaac35!2zMjAgUGhhbiBL4bq_IELDrW5oLCDEkGEgS2FvLCBRdeG6rW4gMSwgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1753775690244!5m2!1svi!2s",
-    },
   ],
 };
 
